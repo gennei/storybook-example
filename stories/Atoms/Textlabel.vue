@@ -1,5 +1,5 @@
 <template>
-  <p>{{ text }}</p>
+  <p class="label">{{ text }}</p>
 </template>
 
 <script>
@@ -15,7 +15,8 @@ export default {
 </script>
 
 <style scoped>
-p {
+.label {
+  margin: 0;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0.06px;
