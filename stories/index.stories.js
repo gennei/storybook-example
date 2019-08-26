@@ -8,11 +8,16 @@ import { linkTo } from '@storybook/addon-links';
 import Button from './Atoms/FormSubmitButton.vue';
 import Star from './Atoms/Star.vue';
 import ClearButton from './Atoms/ClearButton.vue';
+import Textarea from './Atoms/FormTextarea';
 
 /* Molecules */
 import RatingStar from './Molecules/RatingStar.vue';
 
 storiesOf('Atoms', module)
+  .add('Textarea', () => ({
+    components: { Textarea },
+    template: '<Textarea/>'
+  }))
   .add('ClearButton', () => ({
     components: { ClearButton },
     template: '<ClearButton/>'
