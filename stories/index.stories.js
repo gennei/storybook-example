@@ -16,6 +16,7 @@ import NetabareCheckbox from './Atoms/NetabareCheckbox.vue'
 /* Molecules */
 import RatingStar from './Molecules/RatingStar.vue';
 import ReviewForm from './Molecules/ReviewForm.vue';
+import MemoForm from './Molecules/MemoForm.vue';
 
 storiesOf('Atoms', module)
   .add('NetabareCheckbox', () => ({
@@ -59,4 +60,8 @@ storiesOf('Molecules', module)
   .add('ReviewForm', () => ({
     components: { ReviewForm },
     template: '<ReviewForm/>'
+  }))
+  .add('MemoForm', () => ({
+    components: { MemoForm },
+    template: '<MemoForm/>'
   }));
