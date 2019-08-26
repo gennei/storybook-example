@@ -5,7 +5,9 @@
     <Star :id="3" :rank="rank" />
     <Star :id="4" :rank="rank" />
     <Star :id="5" :rank="rank" />
-    <ClearButton />
+    <div class="clear-button-wrapper">
+      <ClearButton />
+    </div>
   </div>
 </template>
 
@@ -31,5 +33,8 @@ export default {
 <style scoped>
 .stars {
   display: flex;
+}
+.clear-button-wrapper {
+  margin-left: 15px;
 }
 </style>
