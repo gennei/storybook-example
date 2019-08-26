@@ -8,12 +8,22 @@ import { linkTo } from '@storybook/addon-links';
 import Button from './Atoms/FormSubmitButton.vue';
 import Star from './Atoms/Star.vue';
 import ClearButton from './Atoms/ClearButton.vue';
-import Textarea from './Atoms/FormTextarea';
+import Textarea from './Atoms/FormTextarea.vue';
+import Textlabel from './Atoms/Textlabel.vue';
+import AnnotationText from './Atoms/AnnotationText';
 
 /* Molecules */
 import RatingStar from './Molecules/RatingStar.vue';
 
 storiesOf('Atoms', module)
+  .add('AnnotationText', () => ({
+    components: { AnnotationText },
+    template: '<AnnotationText text="HTMLタグ使用不可"/>'
+  }))
+  .add('Textlabel', () => ({
+    components: { Textlabel },
+    template: '<Textlabel text="評価"/>'
+  }))
   .add('Textarea', () => ({
     components: { Textarea },
     template: '<Textarea/>'
